@@ -1,6 +1,6 @@
 Chattsystem
 
-Jag ska skapa en att där man chattar med varandra
+Jag ska skapa en app där man chattar med varandra
 
 använd databas för att ta emot och skicka medelanden som skrivs
 online kommunikation
