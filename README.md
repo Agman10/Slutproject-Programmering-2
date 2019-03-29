@@ -5,6 +5,7 @@ Jag ska skapa en att där man chattar med varandra
 använd databas för att ta emot och skicka medelanden som skrivs
 online kommunikation
 
+endast två kan chatta samtidigt för att göra det simpelt
 
 * databas
 
