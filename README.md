@@ -22,3 +22,11 @@ skriva ner sitt användarnamn och lösenord. då loggas man in och då skapas en
 om man redan har en användare så loggas man in men det läggs inte till någon ny
 användare på databasen. Om användarnamnet redan
 finns så medelas det. 
+
+
+12-04-2019
+på table message så är username och message på typ varchar(255) för att det är
+text int är siffror.
+
+på table User så är username och password varchar(255). id är primary och typ
+är int(11). Extra är på auto_increment.
