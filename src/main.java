@@ -4,10 +4,17 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * namnen på värde från tables
+ */
 public class main{
-    String databaseUsername = "";
-    String databasePassword = "";
+    public String username = null;
+    public String password = null;
 
-    System.out.print("Enter Username: ");
-    String name = sc.next();
+    public int id = 0;
+
+    public final String tableUser = username + password + id;
+
+
+
 }

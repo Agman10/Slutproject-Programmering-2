@@ -5,7 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-
+/**
+ * databas information
+ */
 public class server{
     public static final String DEFAULT_DRIVER_CLASS = "com.mysql.jdbc.Driver";
     public static String hostname = "localhost";

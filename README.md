@@ -30,3 +30,7 @@ text int är siffror.
 
 på table User så är username och password varchar(255). id är primary och typ
 är int(11). Extra är på auto_increment.
+
+26-04-2019
+Jag ska börja med att lägga till användare till usern och kolla om mitt
+program är ansluten till databasen
