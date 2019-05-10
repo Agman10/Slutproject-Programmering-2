@@ -34,3 +34,9 @@ på table User så är username och password varchar(255). id är primary och ty
 26-04-2019
 Jag ska börja med att lägga till användare till usern och kolla om mitt
 program är ansluten till databasen
+
+* 03-05-2019 
+Server.java är ansluten till databasen.
+
+* 10-05-2019 laggt till klasser för message view och user och skrivit på message.java
+och Database.java
