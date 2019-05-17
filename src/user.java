@@ -3,6 +3,9 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
+/**
+ *
+ */
 public class user {
 
     public user(Socket socket, server server) {

@@ -24,14 +24,14 @@ användare på databasen. Om användarnamnet redan
 finns så medelas det. 
 
 
-12-04-2019
+* 12-04-2019
 på table message så är username och message på typ varchar(255) för att det är
 text int är siffror.
 
 på table User så är username och password varchar(255). id är primary och typ
 är int(11). Extra är på auto_increment.
 
-26-04-2019
+* 26-04-2019
 Jag ska börja med att lägga till användare till usern och kolla om mitt
 program är ansluten till databasen
 
@@ -40,3 +40,5 @@ Server.java är ansluten till databasen.
 
 * 10-05-2019 laggt till klasser för message view och user och skrivit på message.java
 och Database.java
+
+* 17-05-2019: har för det mesta kommenterat koden med javadocs och skrivit på wikin

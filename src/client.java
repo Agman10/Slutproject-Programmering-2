@@ -22,7 +22,9 @@ try (Connection connection = DriverManager.getConnection(url, username, password
     } catch (SQLException e) {
         throw new IllegalStateException("Cannot connect the database!", e);
     }*/
-
+    /**
+     *
+     */
     private final int port;
     private final String host;
     public String username = null;
@@ -40,6 +42,12 @@ try (Connection connection = DriverManager.getConnection(url, username, password
         System.out.println("username");
 
     }
+
+    /**
+     *
+     * @param host det är var servern hostas (localhost)
+     * @param port porten som den connectas till (3306)
+     */
     public client(String host, int port){
             this.host = host;
             this.port = port;
@@ -49,6 +57,7 @@ try (Connection connection = DriverManager.getConnection(url, username, password
     public void run() throws IOException {
 
         Socket client = new Socket(host, port);
+
 
     }
 

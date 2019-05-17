@@ -3,6 +3,9 @@ import java.net.*;
 
 //läser användarens input och skickar den
 
+/**
+ * writer där skriver man sitt medelande, det skickas till databasen.
+ */
 public class message {
         private message writer;
         private Socket socket;
