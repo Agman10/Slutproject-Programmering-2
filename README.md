@@ -42,3 +42,8 @@ Server.java är ansluten till databasen.
 och Database.java
 
 * 17-05-2019: har för det mesta kommenterat koden med javadocs och skrivit på wikin
+
+* 20-05-2019: la till en textfunktion där man lägger i namn och lösenord, det
+ ska senare skickas till databasen
+ 
+* 23-05-2019: 

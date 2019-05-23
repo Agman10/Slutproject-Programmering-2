@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.io.*;
 import java.net.*;
 import java.util.*;
+import java.util.Scanner;
 
 /**
  * databas information
@@ -16,7 +17,6 @@ public class server{
 
     public server(int port) {
         this.port = port;
-
     }
 
     /**

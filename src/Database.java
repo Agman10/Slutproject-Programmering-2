@@ -1,5 +1,5 @@
-import java.lang.reflect.Executable;
 import java.sql.*;
+import java.sql.SQLException;
 
 /**
  *
@@ -8,7 +8,7 @@ import java.sql.*;
  *
  */
 public class Database {
-    public static final String DEFAULT_DRIVER_CLASS = "com.mysql.jdbc.Driver";
+    public static final String DEFAULT_DRIVER_CLASS = "com.mysql.jdbc.client";
     public static String hostname = "localhost";
     public static String dbName = "Chatt";
     public static int port = 3306;
@@ -19,50 +19,48 @@ public class Database {
     Connection connection = null;
 
     /**
-     * connection ansluter url och användernamnen och lösenordet
+     *
      */
     public Database() {
         try {
             Class.forName(DEFAULT_DRIVER_CLASS);
             connection = DriverManager.getConnection(DEFAULT_URL, DEFAULT_USERNAME, DEFAULT_PASSWORD);
-        } catch(Exception e){
-
+        } catch (Exception e) {
         }
     }
 
     /**
-     *
-     * @param values värderna som man columnerna på alla tables används för att ta den från databasen
+     * @param values  värderna som man columnerna på alla tables används för att ta den från databasen
      * @param columns colmnerna som hittas i tabels
-     * @param tables tables där man har columnen
-     * @throws SQLException
-     *
-     * rs.getString("username") används för att få användarnamnet från databasen
-     *
-     *
+     * @param table   tables där man har columnen
+     * @throws SQLException rs.getString("username") används för att få användarnamnet från databasen
      */
-    public void insert(String values, String columns, String tables) throws SQLException {
+    public void insert(String values, String columns, String table) throws SQLException {
 
         // SQL queries goes here
         PreparedStatement ps;
         ResultSet rs;
-        ps = connection.prepareStatement("SELECT * FROM User where id = 1");
-        rs = ps.executeQuery();
+        ps = connection.prepareStatement("INSERT INTO " + table + " (" + columns + ") " + "VALUES (" + values + ")");
+        rs = ps.executeQuery("select password, username, userid from ´User´");
+
 /**
  *
  */
         while (rs.next()) {
-            user = new user(rs.getInt("id"), rs.getString("username"));
+            //new user(rs.getInt("id"), rs.getString("username"));
 
 
             String username = rs.getString("username");
             String password = rs.getString("password");
             System.out.println(username + " , " + password);
+
         }
+
 
     /*} catch(SQLException e){
         System.err.println(e.getMessage());
-    } catch(Exception e){
-*/
-        }
+    }*/
+
+    }
+
 }

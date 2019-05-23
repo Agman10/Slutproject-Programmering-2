@@ -6,7 +6,7 @@ import java.net.*;
 /**
  * writer där skriver man sitt medelande, det skickas till databasen.
  */
-public class message {
+/*public class message {
         private message writer;
         private Socket socket;
         private client client;
@@ -24,3 +24,4 @@ public class message {
             }
         }
 }
+*/

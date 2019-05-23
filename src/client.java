@@ -6,7 +6,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.net.Socket;
 import java.net.UnknownHostException;
-
+import java.util.Scanner;
+import java.sql.SQLException;
+import java.sql.*;
 /**
  * namnen på värde från tables
  */
@@ -36,10 +38,41 @@ try (Connection connection = DriverManager.getConnection(url, username, password
 
     public final String tableUser = username + password + id;
 
-
+    /**
+     *
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
         //new Client("127.0.0.1", 3306).run();
-        System.out.println("username");
+
+        String username;
+
+        String password;
+
+        String message;
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Enter your username");
+
+        username = in.nextLine();
+
+        System.out.println("You entered username: "+username);
+
+        System.out.println("Enter your password");
+
+        password = in.nextLine();
+
+        System.out.println("logged in as " + username + " " + "with password " + password + " Now say someting");
+
+        message = in.nextLine();
+
+        System.out.println("<" + username + ">" + " " + message);
+
+
+
+
 
     }
 
@@ -60,5 +93,11 @@ try (Connection connection = DriverManager.getConnection(url, username, password
 
 
     }
+
+
+    /**
+     * A Java Scanner class example from http://alvinalexander.com
+     */
+
 
 }
