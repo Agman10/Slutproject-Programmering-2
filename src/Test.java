@@ -6,14 +6,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-class test {
+class Test {
     public static void main(String args[]) throws SQLException {
-
-        Database Database = new Database();
 
         String username;
 
         String password;
+
+        String message;
 
         Scanner in = new Scanner(System.in);
 
@@ -27,7 +27,11 @@ class test {
 
         password = in.nextLine();
 
-        System.out.println(password);
+        System.out.println("logged in as " + username + " " + "with password " + password + " Now say someting");
+
+        message = in.nextLine();
+
+        System.out.println("<" + username + ">" + " " + message);
 
 
         /*byte x = (byte) 95;

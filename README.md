@@ -24,6 +24,7 @@ användare på databasen. Om användarnamnet redan
 finns så medelas det. 
 
 
+Arbetsprocessen
 * 12-04-2019
 på table message så är username och message på typ varchar(255) för att det är
 text int är siffror.
@@ -46,4 +47,6 @@ och Database.java
 * 20-05-2019: la till en textfunktion där man lägger i namn och lösenord, det
  ska senare skickas till databasen
  
-* 23-05-2019: 
+* 23-05-2019: Tog bort user.java, view.java, message.java för dem behövdes inte
+client och server kan nu interagerma med varandra och databasfunktionen är inte
+helt klar än men den är connectad med Database.java

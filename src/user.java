@@ -6,9 +6,9 @@ import java.util.*;
 /**
  *
  */
-public class user {
+/*public class user {
 
-    public user(Socket socket, server server) {
+    public user(Socket socket, Server server) {
 
     }
 
@@ -19,4 +19,4 @@ public class user {
     public static void add(user newUser) {
 
     }
-}
+}*/
